@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head><title>Styled Result</title></head>
+<body>
+  <h1>Styled Image</h1>
+  <p>Content Image:</p><img src="{{ url_for('static', filename='uploads/' + content_image) }}" width="300">
+  <p>Style Image:</p><img src="{{ url_for('static', filename='uploads/' + style_image) }}" width="300">
+  <p>Result:</p><img src="{{ url_for('static', filename='results/' + output_image) }}" width="500">
+  <br><a href="/">Try Another</a>
+</body>
+</html>
